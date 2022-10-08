@@ -1,0 +1,22 @@
+package com.SingleTon;
+
+import java.io.IOException;
+
+public class AdactinData_Manager {
+	
+	private AdactinData_Manager() {
+	}
+
+	public static AdactinData_Manager instanceForTDM() {
+
+		AdactinData_Manager tdm = new AdactinData_Manager();
+		return tdm;
+	}
+	
+	public  Test_Data_Reader instanceForTDR() throws IOException {
+		Test_Data_Reader reader = new Test_Data_Reader();
+		return reader;
+	}
+	
+	
+}

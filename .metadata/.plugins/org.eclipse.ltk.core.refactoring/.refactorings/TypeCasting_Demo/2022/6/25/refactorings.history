@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.typecasting.demo.Employee&apos; to &apos;Casting&apos;&#x0D;&#x0A;- Original project: &apos;TypeCasting_Demo&apos;&#x0D;&#x0A;- Original element: &apos;com.typecasting.demo.Employee&apos;&#x0D;&#x0A;- Renamed element: &apos;com.typecasting.demo.Casting&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Employee&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.typecasting.demo{Employee.java[Employee" matchStrategy="1" name="Casting" qualified="false" references="true" similarDeclarations="false" stamp="1655291005387" textual="false" version="1.0"/>
+</session>

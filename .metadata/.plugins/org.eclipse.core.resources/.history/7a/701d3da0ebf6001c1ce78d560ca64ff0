@@ -1,0 +1,19 @@
+package com.looop;
+
+public class For_Loop {
+
+	public static void main(String[] args) {
+		System.out.println("Start");
+		System.out.println();
+		
+		for (int i=90; i>=86; i--) {   //>> TASK 4 <<//
+		
+			System.out.print(i+" ");
+
+	}
+		System.out.println();
+		System.out.println("End");
+
+	}
+
+}

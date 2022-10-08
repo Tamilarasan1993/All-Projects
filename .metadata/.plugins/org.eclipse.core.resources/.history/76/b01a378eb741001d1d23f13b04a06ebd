@@ -1,0 +1,4 @@
+Feature: facebook login
+Scenario: login
+Given user launch the facbook
+

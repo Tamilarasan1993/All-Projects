@@ -1,0 +1,9 @@
+package com.cucumber_runner;
+
+import org.junit.runner.RunWith;
+
+public class Purchse_runner {
+	
+	@RunWith(Cucumber.class)
+	@CucumberOptions()
+}

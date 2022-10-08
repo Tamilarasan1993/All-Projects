@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.Practicing.Iinterview_Progs&apos; to &apos;Interview_Progs&apos;&#x0D;&#x0A;- Original project: &apos;Java_Practicing&apos;&#x0D;&#x0A;- Original element: &apos;com.Practicing.Iinterview_Progs&apos;&#x0D;&#x0A;- Renamed element: &apos;com.Practicing.Interview_Progs&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Iinterview_Progs&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.Practicing{Iinterview_Progs.java[Iinterview_Progs" matchStrategy="1" name="Interview_Progs" qualified="false" references="true" similarDeclarations="false" stamp="1664204840043" textual="false" version="1.0"/>
+</session>

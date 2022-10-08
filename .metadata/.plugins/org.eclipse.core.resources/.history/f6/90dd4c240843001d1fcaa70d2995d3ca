@@ -1,0 +1,29 @@
+package com.cucumber_runner;
+
+import java.sql.Driver;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
+
+import Utility_Files.Base_Class;
+import io.cucumber.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions()
+
+public class Purchase_runner {
+	public static WebDriver driver;
+	
+	@BeforeClass
+	public void set_Up() {
+		driver = Base_Class.Browser("Chrome");
+		driver.get("http://automationpractice.com/index.php");
+	}
+	
+	@AfterClass
+	public void tear_Down() {
+		driver.close();
+	}
+}

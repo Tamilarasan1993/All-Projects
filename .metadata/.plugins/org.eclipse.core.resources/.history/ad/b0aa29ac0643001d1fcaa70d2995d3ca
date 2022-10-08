@@ -1,0 +1,14 @@
+package com.SingleTon;
+
+import org.openqa.selenium.WebDriver;
+
+public class Purchase_Data_Manager {
+	
+	private Purchase_Data_Manager() {
+	}
+
+	public static pdata() {
+		Purchase_Data_Manager pdm = new Purchase_Data_Manager();
+		return pdata;
+	}
+}

@@ -1,0 +1,6 @@
+Feature: facebook login
+Scenario: login
+given user launch the facbook
+When user enters the valid input in field
+Then user enters the password
+

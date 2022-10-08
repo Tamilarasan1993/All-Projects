@@ -1,0 +1,30 @@
+package com.cucumber_runner;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
+
+import Utility_Files.Base_Class;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features=".//Feature",glue = "com.purchase_stepdef",
+								monochrome = true,publish = true,
+								plugin ="html:Reports/Purchase.html")
+
+public class Purchase_runner {
+	public static WebDriver driver;
+	
+	@BeforeClass
+	public void set_Up() {
+		driver = Base_Class.Browser("Chrome");
+		driver.get("http://automationpractice.com/index.php");
+	}
+	
+	@AfterClass
+	public void tear_Down() {
+		driver.close();
+	}
+}

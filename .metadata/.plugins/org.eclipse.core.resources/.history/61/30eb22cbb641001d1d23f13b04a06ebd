@@ -1,0 +1,36 @@
+package com.Step_Definition;
+
+import org.openqa.selenium.WebDriver;
+
+import com.Cucumber_Runner.facerunner;
+
+import Utility_Files.Base_Class;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class facebook extends Base_Class{
+public static WebDriver driver = facerunner.driver;	
+
+@Given("user launch the facbook")
+public void user_launch_the_facbook() {
+}
+
+	
+	
+	
+	@When("user enters the valid input in field")
+	public void user_enters_the_valid_input_in_field() {
+	}
+
+	@When("user enters the password")
+	public void user_enters_the_password() {
+	}
+
+	@Then("user logins")
+	public void user_logins() {
+	}
+
+
+
+}

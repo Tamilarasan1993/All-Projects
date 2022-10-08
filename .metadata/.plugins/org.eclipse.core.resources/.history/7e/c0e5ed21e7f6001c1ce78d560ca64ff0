@@ -1,0 +1,20 @@
+package com.looop;
+
+public class For_Loop {
+
+	public static void main(String[] args) {
+		System.out.println("Start");
+		int sum =0;
+		int n =  1000;
+		
+		for (int i=1; i<=5; i++) {
+			sum += i;
+			
+       	
+	}
+		System.out.println("sum = "+ sum);
+	 System.out.println("End");
+
+	}
+
+}

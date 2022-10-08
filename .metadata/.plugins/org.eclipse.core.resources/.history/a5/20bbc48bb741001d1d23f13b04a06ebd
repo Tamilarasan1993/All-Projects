@@ -1,0 +1,23 @@
+package com.Step_Definition;
+
+import org.openqa.selenium.WebDriver;
+
+import com.Cucumber_Runner.facerunner;
+
+import Utility_Files.Base_Class;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class facebook extends Base_Class{
+public static WebDriver driver = facerunner.driver;	
+
+@Given("user launch the facbook")
+public void user_launch_the_facbook() {
+Browser("https://Facebook.com");
+	
+}	
+
+
+
+}

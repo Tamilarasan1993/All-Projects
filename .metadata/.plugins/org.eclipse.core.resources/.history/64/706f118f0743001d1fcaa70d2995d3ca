@@ -1,0 +1,15 @@
+package com.SingleTon;
+
+import org.openqa.selenium.WebDriver;
+
+import com.PageObjectManager.Purchase_POManager;
+
+public class PuchaseSingleTon {
+	public static WebDriver driver;
+	
+	public static Purchase_Data_Manager manager = new Purchase_Data_Manager();
+	
+	
+	
+
+}

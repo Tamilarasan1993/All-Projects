@@ -1,0 +1,106 @@
+package com.purchase_stepdef;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebDriver;
+
+import com.PageObjectManager.Purchase_POManager;
+import com.SingleTon.Purchase_Data_Manager;
+import com.cucumber_runner.Purchase_runner;
+
+import Utility_Files.Base_Class;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.*;
+
+public class step_def extends Base_Class{
+	public static WebDriver driver=Purchase_runner.driver;
+	public static Purchase_POManager manager = new Purchase_POManager(driver);
+
+	@Before
+	public void signIn() {
+		Click(manager.getSign().getSignin_btn());
+	}
+	@After
+	public void signOut() {
+		Click(manager.getSign().getSignOut_btn());
+		driver.navigate().to("http://automationpractice.com/index.php?");
+	}
+	
+	@When("User enters the Username in username field")
+	public void user_enters_the_username_in_username_field() throws IOException {
+		Sendkeys(manager.getSign().getEmail(),Purchase_Data_Manager.pdata().datareader().username());
+	}
+
+	@When("user enters the Password in password field")
+	public void user_enters_the_password_in_password_field() throws IOException {
+		Sendkeys(manager.getSign().getPwd(), Purchase_Data_Manager.pdata().datareader().password());
+	}
+
+	@Then("User clicks on login button and it navigates to user account page")
+	public void user_clicks_on_login_button_and_it_navigates_to_user_account_page() {
+		Click(manager.getSign().getLogin_btn());
+	}
+
+	@When("User clicks on Casual Dresses in the Dresses and it navigates to CasualDresses page")
+	public void user_clicks_on_casual_dresses_in_the_dresses_and_it_navigates_to_casual_dresses_page() {
+		Click(manager.getMy().getCasual());
+	}
+
+	@When("User chooses the dress and clicks on Quikview")
+	public void user_chooses_the_dress_and_clicks_on_quikview() {
+		Click(manager.getQuick().getQuickview());
+		FRAMES(manager.getQuick().getIframe());
+	}
+
+	@When("user selects the Quantity ,size and color")
+	public void user_selects_the_quantity_size_and_color() throws IOException {
+		Sendkeys(manager.getQuick().getQty(), Purchase_Data_Manager.pdata().datareader().quantity());
+		SelectValue(manager.getQuick().getSize(), value);
+	}
+
+	@When("User clicks on AddToCart button and it shows the pop up of selected items")
+	public void user_clicks_on_add_to_cart_button_and_it_shows_the_pop_up_of_selected_items() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("User clicks on ProceedToCheckout button and it navigates to summary column in Order Page")
+	public void user_clicks_on_proceed_to_checkout_button_and_it_navigates_to_summary_column_in_order_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("User clicks on ProceedToCheckout button in summary column and it navigates to Address column")
+	public void user_clicks_on_proceed_to_checkout_button_in_summary_column_and_it_navigates_to_address_column() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("User clicks on ProceedToCheckout button in Address column and it navigates to Shipping column")
+	public void user_clicks_on_proceed_to_checkout_button_in_address_column_and_it_navigates_to_shipping_column() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("User clicks on CheckBox and clicks on ProceedToCheckout button in Shipping column and it navigates to payment column")
+	public void user_clicks_on_check_box_and_clicks_on_proceed_to_checkout_button_in_shipping_column_and_it_navigates_to_payment_column() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("User chooses payment type")
+	public void user_chooses_payment_type() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("User clicks on Confirm my order button in MyStore page")
+	public void user_clicks_on_confirm_my_order_button_in_my_store_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	
+	
+}

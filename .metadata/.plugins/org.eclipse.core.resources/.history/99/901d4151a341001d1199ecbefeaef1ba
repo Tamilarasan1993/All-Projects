@@ -1,0 +1,17 @@
+package com.Cucumber_Runner;
+
+import org.openqa.selenium.WebDriver;
+
+import Utility_Files.Base_Class;
+
+public class open extends Base_Class{
+	public static WebDriver driver= Browser("chrome");
+	
+	public static void main(String[] args) {
+		
+		GetUrl("https://facebook.com");
+		
+		
+	}
+
+}

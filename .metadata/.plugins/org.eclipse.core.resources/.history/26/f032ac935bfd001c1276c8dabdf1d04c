@@ -1,0 +1,22 @@
+package com.looop;
+
+public class LOOOP {
+	public static void main(String[] args) {
+		int i=1;
+		
+while (i<=10) {
+	i++;
+			
+			if(i==9) {
+				
+			
+			continue ;
+			}
+			
+			System.out.println(i);
+		
+}
+		}
+		
+
+}

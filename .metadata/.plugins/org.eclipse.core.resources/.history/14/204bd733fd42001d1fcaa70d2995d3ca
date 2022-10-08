@@ -1,0 +1,30 @@
+package com.cucumber_runner;
+
+import java.sql.Driver;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
+
+import Utility_Files.Base_Class;
+import io.cucumber.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions()
+
+public class Purchse_runner {
+	public static WebDriver driver;
+	
+	@BeforeClass
+	public void set_Up() {
+		driver = Base_Class.Browser("Chrome");
+		driver.get("https://adactinhotelapp.com/SearchHotel.php");
+	}
+	
+	@AfterClass
+	public void tear_Down() {
+		// TODO Auto-generated method stub
+
+	}
+}
